@@ -1,16 +1,28 @@
-# pos_tracker
+# pos-tracker-dashboard
 
-A new Flutter project.
+Flutter web app intended for Admins who are resposible for looking after the pos machines. The app tracks the pos-tracker app, which sends its location information and status in realtime to a firestore database.
+ 
+It also enables admins to view every information of each terminal. There are four types of users:
 
-## Getting Started
+### 1. Head-office admins
+- Can View all terminals under all districts
+- Have all available privileges: editing, archiving and relocating
+- user management: adding, updating, and deactivating (deleting)
+- 
 
-This project is a starting point for a Flutter application.
+### 2. District admins
+- Can view all terminals under their district
+- Reporting exceptional issues to the head-office admins
+- manage/add users under their district
 
-A few resources to get you started if this is your first Flutter project:
+### 3. Branch admins
+- Can view all terminals under their branch
+- Requesting editing, archiving, and relocating of terminals
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 4. Guest users
+- Intended for higher officials of the bank willing to oversee the perfomance of these terminals
+- have an interactive user interface with the analysis of the overall perfomance of the terminals
+- They don't have any privilege other than viewing
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## NB:
+As the app is under development you may not find some of the functionalities listed above, or you may find it less than expected.
